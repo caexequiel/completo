@@ -1,0 +1,90 @@
+body {
+    background-image: -webkit-gradient(radial,
+            50% 50%, 0,
+            50% 50%, 1000,
+            from(rgb(83, 83, 83)),
+            to(rgb(21, 21, 21)));
+}
+
+div {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(45, 147, 231, 0.359);
+}
+
+.wrap {
+    margin: auto;
+    width: 1180px;
+    overflow: hidden;
+    /* because children will be floated */
+    color: rgb(62, 62, 62);
+}
+
+#slides {
+    width: 999999px;
+}
+
+#slides>div {
+    height: 600px;
+    width: 1180px;
+    float: left;
+    margin-right: 200px;
+    text-align: center;
+    /* Flexible Box Model */
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-pack: center;
+    display: box;
+    box-align: center;
+    box-orient: horizontal;
+    box-pack: center;
+
+    -webkit-transition: all 1s linear;
+    transition: all 1s linear;
+}
+
+h4 {
+    text-align: left;
+}
+
+ul {
+    list-style-type: none;
+    justify-content: center;
+}
+
+li {
+    margin: 0 1rem;
+    color: #fbf9f9;
+}
+
+#slides h1,
+#slides h2,
+#slides h3,
+#slides h4,
+#slides h5 {
+    color: #fbf9f9;
+    font-family: 'League Gothic', sans-serif;
+    letter-spacing: -1px;
+    margin-top: 0;
+    text-shadow: 1px 1px 0 rgb(22, 22, 22);
+}
+
+#slides>div h2 {
+    margin-bottom: 50px;
+    font-size: 100px;
+    line-height: 1em;
+}
+
+.imagen {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 10%;
+    height: auto;
+}
+
